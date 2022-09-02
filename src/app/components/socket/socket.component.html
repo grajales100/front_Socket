@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let item of lista">
+        <p>{{item.nombre}}</p>
+    </li>
+</ul>
+<label for="">ingrese el nombre de la alerta</label>
+<input [(ngModel)]="noti.nombre" type="text">
+<button (click)="enviarMensaje()">crear alerta</button>
+
+
